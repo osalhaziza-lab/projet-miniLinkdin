@@ -16,7 +16,7 @@ class UserFactory extends Factory
      * The current password being used by the factory.
      */
     protected static ?string $password;
-
+protected $model = User::class;
     /**
      * Define the model's default state.
      *
@@ -29,10 +29,24 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'role' => 'candidat',
             'remember_token' => Str::random(10),
         ];
     }
-
+public function admin(): static
+    {
+        return $this->state(['role' => 'admin']);
+    }
+ 
+    public function recruteur(): static
+    {
+        return $this->state(['role' => 'recruteur']);
+    }
+ 
+    public function candidat(): static
+    {
+        return $this->state(['role' => 'candidat']);
+    }
     /**
      * Indicate that the model's email address should be unverified.
      */
