@@ -3,9 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use App\Models\Profil;
+use App\Models\Offre;
+
+#[Fillable(['name', 'email', 'password','role'])]
+#[Hidden(['password', 'remember_token'])]
+
+
 use Tymon\JWTAuth\Contracts\JWTSubject; // 👈 importer cette interface
 
 class User extends Authenticatable implements JWTSubject // 👈 implémenter
+
 {
     protected $fillable = [
         'name', 'email', 'password', 'role'
@@ -31,9 +40,16 @@ class User extends Authenticatable implements JWTSubject // 👈 implémenter
         ];
     }
 
-    // Relation avec le profil 
     public function profil()
-    {
-        return $this->hasOne(Profil::class);
-    }
+{
+    return $this->hasOne(Profil::class);
 }
+
+public function offres()
+{
+    return $this->hasMany(Offre::class);
+}
+}
+
+
+    
