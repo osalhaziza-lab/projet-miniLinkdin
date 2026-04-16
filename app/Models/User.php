@@ -2,11 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Database\Factories\UserFactory;
-use Illuminate\Database\Eloquent\Attributes\Fillable;
-use Illuminate\Database\Eloquent\Attributes\Hidden;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Profil;
@@ -14,23 +9,37 @@ use App\Models\Offre;
 
 #[Fillable(['name', 'email', 'password','role'])]
 #[Hidden(['password', 'remember_token'])]
-class User extends Authenticatable
-{
-    /** @use HasFactory<UserFactory> */
-    use HasFactory, Notifiable;
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+
+use Tymon\JWTAuth\Contracts\JWTSubject; // 👈 importer cette interface
+
+class User extends Authenticatable implements JWTSubject // 👈 implémenter
+
+{
+    protected $fillable = [
+        'name', 'email', 'password', 'role'
+    ];
+
+    protected $hidden = [
+        'password',
+    ];
+
+
+
+    // identifiant unique (l'id)
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    // Ajoute des données supplémentaires dans le Payload du token
+    public function getJWTCustomClaims()
     {
         return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'role' => $this->role  // on met le rôle dans le token !
         ];
     }
+
     public function profil()
 {
     return $this->hasOne(Profil::class);
@@ -41,3 +50,6 @@ public function offres()
     return $this->hasMany(Offre::class);
 }
 }
+
+
+    
