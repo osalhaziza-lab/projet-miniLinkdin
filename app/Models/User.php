@@ -3,25 +3,27 @@
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Tymon\JWTAuth\Contracts\JWTSubject; 
 use Illuminate\Notifications\Notifiable;
 use App\Models\Profil;
 use App\Models\Offre;
 
-#[Fillable(['name', 'email', 'password','role'])]
-#[Hidden(['password', 'remember_token'])]
 
 
-use Tymon\JWTAuth\Contracts\JWTSubject; // 👈 importer cette interface
 
-class User extends Authenticatable implements JWTSubject // 👈 implémenter
+class User extends Authenticatable implements JWTSubject 
 
 {
+      use HasFactory, Notifiable;
+      
     protected $fillable = [
         'name', 'email', 'password', 'role'
     ];
 
     protected $hidden = [
         'password',
+        'remember_token'
     ];
 
 
