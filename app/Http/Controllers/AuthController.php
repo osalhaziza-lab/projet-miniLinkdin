@@ -19,7 +19,7 @@ class AuthController extends Controller
             'name'     => 'required|string|max:255',
             'email'    => 'required|email|unique:users',
             'password' => 'required|string|min:6',
-            'role'     => 'required|in:candidat,recruteur', // admin ne peut pas s'inscrire seul
+            'role'     => 'required|in:candidat,recruteur,admin', // admin ne peut pas s'inscrire seul
         ]);
 
         if ($validator->fails()) {
