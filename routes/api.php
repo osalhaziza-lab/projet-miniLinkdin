@@ -19,4 +19,10 @@ Route::middleware('auth:api')->group(function () {
     Route::put('/profil', [ProfilController::class, 'update']);
     Route::post('/profil/competences', [ProfilController::class, 'addCompetence']);
     Route::delete('/profil/competences/{competence_id}', [ProfilController::class, 'removeCompetence']);
+
+    Route::get('/offres', [OffreController::class, 'index']);
+Route::get('/offres/{offre}', [OffreController::class, 'show']);
+Route::post('/offres', [OffreController::class, 'store']);
+Route::put('/offres/{offre}', [OffreController::class, 'update']);
+Route::delete('/offres/{offre}', [OffreController::class, 'destroy']);
 });
