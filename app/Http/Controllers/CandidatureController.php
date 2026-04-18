@@ -6,6 +6,8 @@ use App\Models\Candidature;
 use App\Models\Offre;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Events\CandidatureDeposee;
+use App\Events\StatutCandidatureMis;
 
 class CandidatureController extends Controller
 {
@@ -43,7 +45,7 @@ class CandidatureController extends Controller
             'message'   => $request->message,
             'statut'    => 'en_attente',
         ]);
-
+        event(new CandidatureDeposee($candidature));
         return response()->json([
             'message'     => 'Candidature soumise avec succès.',
             'candidature' => $candidature->load('offre'),
@@ -94,10 +96,9 @@ class CandidatureController extends Controller
         $request->validate([
             'statut' => 'required|in:en_attente,acceptee,refusee',
         ]);
-
+$ancienStatut = $candidature->statut;
         $candidature->update(['statut' => $request->statut]);
-
-        return response()->json([
+event(new StatutCandidatureMis($candidature, $ancienStatut, $request->statut));        return response()->json([
             'message'     => 'Statut mis à jour.',
             'candidature' => $candidature->fresh()->load('profil.user', 'offre'),
         ]);
