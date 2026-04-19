@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Events\CandidatureDeposee;
 use App\Events\StatutCandidatureMis;
-
 class CandidatureController extends Controller
 {
 
