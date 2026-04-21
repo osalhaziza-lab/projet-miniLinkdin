@@ -1,0 +1,3315 @@
+{
+  "info": {
+    "_postman_id": "e5c4f061-0d31-4c6a-97c5-c2f4930c446f",
+    "name": "miniLinkedin Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52798706",
+    "_collection_link": "https://go.postman.co/collection/52798706-e5c4f061-0d31-4c6a-97c5-c2f4930c446f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "offres",
+      "item": [
+        {
+          "name": "GET /api/offres",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzMzMTc0LCJleHAiOjE3NzY3MzY3NzQsIm5iZiI6MTc3NjczMzE3NCwianRpIjoieXZlNDB1bUFCbkNvd3dWSSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.63HC5ST0UlEOQ21fIJ2P8At4zjJvjcFn-oSXt1Gr0vk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GET /api/offres",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:00:57 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:59:59.000000Z\",\n            \"updated_at\": \"2026-04-21T00:59:59.000000Z\",\n            \"recruteur\": {\n                \"id\": 13,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sar@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n                \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"updated_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"recruteur\": {\n                \"id\": 13,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sar@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n                \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"user_id\": 10,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-19T15:44:18.000000Z\",\n            \"updated_at\": \"2026-04-19T15:44:18.000000Z\",\n            \"recruteur\": {\n                \"id\": 10,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sara@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-19T15:30:23.000000Z\",\n                \"updated_at\": \"2026-04-19T15:30:23.000000Z\"\n            }\n        },\n        {\n            \"id\": 1,\n            \"user_id\": 7,\n            \"titre\": \"ingenieur\",\n            \"description\": \"full stack dev\",\n            \"localisation\": \"casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-18T13:56:01.000000Z\",\n            \"updated_at\": \"2026-04-21T00:07:06.000000Z\",\n            \"recruteur\": {\n                \"id\": 7,\n                \"name\": \"zizo\",\n                \"email\": \"zizo@test.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-18T13:49:15.000000Z\",\n                \"updated_at\": \"2026-04-18T13:49:15.000000Z\"\n            }\n        }\n    ],\n    \"first_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"page\": null,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://127.0.0.1:8000/api/offres\",\n    \"per_page\": 10,\n    \"prev_page_url\": null,\n    \"to\": 4,\n    \"total\": 4\n}"
+            }
+          ]
+        },
+        {
+          "name": "filtre par type",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzMzMTc0LCJleHAiOjE3NzY3MzY3NzQsIm5iZiI6MTc3NjczMzE3NCwianRpIjoieXZlNDB1bUFCbkNvd3dWSSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.63HC5ST0UlEOQ21fIJ2P8At4zjJvjcFn-oSXt1Gr0vk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres?type=CDI",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres"
+              ],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "CDI"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "filtre par type",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres?type=CDI",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres"
+                  ],
+                  "query": [
+                    {
+                      "key": "type",
+                      "value": "CDI"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:02:23 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:59:59.000000Z\",\n            \"updated_at\": \"2026-04-21T00:59:59.000000Z\",\n            \"recruteur\": {\n                \"id\": 13,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sar@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n                \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"updated_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"recruteur\": {\n                \"id\": 13,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sar@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n                \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"user_id\": 10,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-19T15:44:18.000000Z\",\n            \"updated_at\": \"2026-04-19T15:44:18.000000Z\",\n            \"recruteur\": {\n                \"id\": 10,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sara@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-19T15:30:23.000000Z\",\n                \"updated_at\": \"2026-04-19T15:30:23.000000Z\"\n            }\n        },\n        {\n            \"id\": 1,\n            \"user_id\": 7,\n            \"titre\": \"ingenieur\",\n            \"description\": \"full stack dev\",\n            \"localisation\": \"casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-18T13:56:01.000000Z\",\n            \"updated_at\": \"2026-04-21T00:07:06.000000Z\",\n            \"recruteur\": {\n                \"id\": 7,\n                \"name\": \"zizo\",\n                \"email\": \"zizo@test.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-18T13:49:15.000000Z\",\n                \"updated_at\": \"2026-04-18T13:49:15.000000Z\"\n            }\n        }\n    ],\n    \"first_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"page\": null,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://127.0.0.1:8000/api/offres\",\n    \"per_page\": 10,\n    \"prev_page_url\": null,\n    \"to\": 4,\n    \"total\": 4\n}"
+            }
+          ]
+        },
+        {
+          "name": "par localisation",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk4NDEzLCJleHAiOjE3NzY2MDIwMTMsIm5iZiI6MTc3NjU5ODQxMywianRpIjoicVJIQ05zZWJxR2tMbE5qVyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InJlY3J1dGV1ciJ9.F4UkvTgbW3DTZ-nW0MWFd9ZbYtOLoStOSxx2KYV5Hhs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres?localisation=Casablanca",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres"
+              ],
+              "query": [
+                {
+                  "key": "localisation",
+                  "value": "Casablanca"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "par localisation",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres?localisation=Casablanca",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres"
+                  ],
+                  "query": [
+                    {
+                      "key": "localisation",
+                      "value": "Casablanca"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:03:38 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:59:59.000000Z\",\n            \"updated_at\": \"2026-04-21T00:59:59.000000Z\",\n            \"recruteur\": {\n                \"id\": 13,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sar@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n                \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"updated_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"recruteur\": {\n                \"id\": 13,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sar@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n                \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"user_id\": 10,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-19T15:44:18.000000Z\",\n            \"updated_at\": \"2026-04-19T15:44:18.000000Z\",\n            \"recruteur\": {\n                \"id\": 10,\n                \"name\": \"Sara Idrissi\",\n                \"email\": \"sara@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-19T15:30:23.000000Z\",\n                \"updated_at\": \"2026-04-19T15:30:23.000000Z\"\n            }\n        },\n        {\n            \"id\": 1,\n            \"user_id\": 7,\n            \"titre\": \"ingenieur\",\n            \"description\": \"full stack dev\",\n            \"localisation\": \"casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-18T13:56:01.000000Z\",\n            \"updated_at\": \"2026-04-21T00:07:06.000000Z\",\n            \"recruteur\": {\n                \"id\": 7,\n                \"name\": \"zizo\",\n                \"email\": \"zizo@test.com\",\n                \"email_verified_at\": null,\n                \"role\": \"recruteur\",\n                \"created_at\": \"2026-04-18T13:49:15.000000Z\",\n                \"updated_at\": \"2026-04-18T13:49:15.000000Z\"\n            }\n        }\n    ],\n    \"first_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"page\": null,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://127.0.0.1:8000/api/offres\",\n    \"per_page\": 10,\n    \"prev_page_url\": null,\n    \"to\": 4,\n    \"total\": 4\n}"
+            }
+          ]
+        },
+        {
+          "name": "par page",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzMzMTc0LCJleHAiOjE3NzY3MzY3NzQsIm5iZiI6MTc3NjczMzE3NCwianRpIjoieXZlNDB1bUFCbkNvd3dWSSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.63HC5ST0UlEOQ21fIJ2P8At4zjJvjcFn-oSXt1Gr0vk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres?page=2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "par page",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres?page=2",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "2"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:04:19 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"current_page\": 2,\n    \"data\": [],\n    \"first_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"from\": null,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"links\": [\n        {\n            \"url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n            \"label\": \"&laquo; Previous\",\n            \"page\": 1,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": false\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://127.0.0.1:8000/api/offres\",\n    \"per_page\": 10,\n    \"prev_page_url\": \"http://127.0.0.1:8000/api/offres?page=1\",\n    \"to\": null,\n    \"total\": 4\n}"
+            }
+          ]
+        },
+        {
+          "name": "par id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk4NDEzLCJleHAiOjE3NzY2MDIwMTMsIm5iZiI6MTc3NjU5ODQxMywianRpIjoicVJIQ05zZWJxR2tMbE5qVyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InJlY3J1dGV1ciJ9.F4UkvTgbW3DTZ-nW0MWFd9ZbYtOLoStOSxx2KYV5Hhs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres",
+                "3"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "par id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres/3",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres",
+                    "3"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:05:04 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"id\": 3,\n    \"user_id\": 13,\n    \"titre\": \"Développeur Laravel\",\n    \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"type\": \"CDI\",\n    \"actif\": true,\n    \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n    \"updated_at\": \"2026-04-21T00:11:57.000000Z\",\n    \"recruteur\": {\n        \"id\": 13,\n        \"name\": \"Sara Idrissi\",\n        \"email\": \"sar@example.com\",\n        \"email_verified_at\": null,\n        \"role\": \"recruteur\",\n        \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n        \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "créer une offre",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzMzMTc0LCJleHAiOjE3NzY3MzY3NzQsIm5iZiI6MTc3NjczMzE3NCwianRpIjoieXZlNDB1bUFCbkNvd3dWSSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.63HC5ST0UlEOQ21fIJ2P8At4zjJvjcFn-oSXt1Gr0vk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titre\": \"Développeur Laravel\",\r\n    \"description\": \"Nous cherchons un dev Laravel expérimenté\",\r\n    \"localisation\": \"Casablanca\",\r\n    \"type\": \"CDI\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "créer une offre",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"titre\": \"Développeur Laravel\",\r\n    \"description\": \"Nous cherchons un dev Laravel expérimenté\",\r\n    \"localisation\": \"Casablanca\",\r\n    \"type\": \"CDI\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:59:59 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"titre\": \"Développeur Laravel\",\n    \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"type\": \"CDI\",\n    \"actif\": true,\n    \"user_id\": 13,\n    \"updated_at\": \"2026-04-21T00:59:59.000000Z\",\n    \"created_at\": \"2026-04-21T00:59:59.000000Z\",\n    \"id\": 4\n}"
+            }
+          ]
+        },
+        {
+          "name": "update",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk4NDEzLCJleHAiOjE3NzY2MDIwMTMsIm5iZiI6MTc3NjU5ODQxMywianRpIjoicVJIQ05zZWJxR2tMbE5qVyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InJlY3J1dGV1ciJ9.F4UkvTgbW3DTZ-nW0MWFd9ZbYtOLoStOSxx2KYV5Hhs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titre\": \"Développeur Laravel Senior\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres",
+                "3"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "update",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"titre\": \"Développeur Laravel Senior\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/offres/3",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres",
+                    "3"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:05:56 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"id\": 3,\n    \"user_id\": 13,\n    \"titre\": \"Développeur Laravel Senior\",\n    \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"type\": \"CDI\",\n    \"actif\": true,\n    \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n    \"updated_at\": \"2026-04-21T01:05:56.000000Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "supprimer",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk4NDEzLCJleHAiOjE3NzY2MDIwMTMsIm5iZiI6MTc3NjU5ODQxMywianRpIjoicVJIQ05zZWJxR2tMbE5qVyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6InJlY3J1dGV1ciJ9.F4UkvTgbW3DTZ-nW0MWFd9ZbYtOLoStOSxx2KYV5Hhs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/offres/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profil",
+      "item": [
+        {
+          "name": "login",
+          "item": []
+        }
+      ]
+    },
+    {
+      "name": "creation de profil",
+      "item": [
+        {
+          "name": "creer profil",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzI4ODg5LCJleHAiOjE3NzY3MzI0ODksIm5iZiI6MTc3NjcyODg4OSwianRpIjoiQTVRd1RrNzJRaVhLYm45cyIsInN1YiI6IjE0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.Y-sLPnhKwTWMxb2ZL4ljvQ7IaAF7JdTxzmsIZjio8ZI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titre\": \"Développeur Laravel\",\r\n    \"bio\": \"dev Laravel expérimenté\",\r\n    \"localisation\": \"Casablanca\",\r\n    \"disponible\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/profil",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profil"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "creer profil",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"titre\": \"Développeur Laravel\",\r\n    \"bio\": \"dev Laravel expérimenté\",\r\n    \"localisation\": \"Casablanca\",\r\n    \"disponible\": 1\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/profil",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "profil"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:29:10 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"titre\": \"Développeur Laravel\",\n    \"bio\": \"dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"disponible\": true,\n    \"user_id\": 14,\n    \"updated_at\": \"2026-04-21T00:29:10.000000Z\",\n    \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n    \"id\": 3\n}"
+            }
+          ]
+        },
+        {
+          "name": "get api/profil",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": [
+            {
+              "name": "get api/profil",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/profil",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "profil"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:15:19 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"id\": 3,\n    \"user_id\": 14,\n    \"titre\": \"Développeur Laravel\",\n    \"bio\": \"dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"disponible\": true,\n    \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n    \"updated_at\": \"2026-04-21T00:29:10.000000Z\",\n    \"competences\": []\n}"
+            }
+          ]
+        },
+        {
+          "name": "update",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk5Mzc4LCJleHAiOjE3NzY2MDI5NzgsIm5iZiI6MTc3NjU5OTM3OCwianRpIjoiYjJ5S1pDZnB4TUVPZkdnOSIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.w8BCs8395y624bI4iwQ7uO-FXDLRo_YBCmntvH063X0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titre\": \"Développeur Full Stack\",\r\n    \"localisation\": \"Casablanca\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/profil",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profil"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "update",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"titre\": \"Développeur Full Stack\",\r\n    \"localisation\": \"Casablanca\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/profil",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "profil"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 01:16:03 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"id\": 3,\n    \"user_id\": 14,\n    \"titre\": \"Développeur Full Stack\",\n    \"bio\": \"dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"disponible\": true,\n    \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n    \"updated_at\": \"2026-04-21T01:16:03.000000Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "ajouter une compétence",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk5Mzc4LCJleHAiOjE3NzY2MDI5NzgsIm5iZiI6MTc3NjU5OTM3OCwianRpIjoiYjJ5S1pDZnB4TUVPZkdnOSIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.w8BCs8395y624bI4iwQ7uO-FXDLRo_YBCmntvH063X0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"competence_id\": 5,\r\n    \"niveau\": \"debutant\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/profil/competences",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profil",
+                "competences"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "ajouter une compétence",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"competence_id\": 1,\r\n    \"niveau\": \"debutant\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/profil/competences",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "profil",
+                    "competences"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 09:40:32 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"id\": 3,\n    \"user_id\": 14,\n    \"titre\": \"Développeur Full Stack\",\n    \"bio\": \"dev Laravel expérimenté\",\n    \"localisation\": \"Casablanca\",\n    \"disponible\": true,\n    \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n    \"updated_at\": \"2026-04-21T01:16:03.000000Z\",\n    \"competences\": [\n        {\n            \"id\": 1,\n            \"nom\": \"React\",\n            \"categorie\": \"Frontend\",\n            \"created_at\": \"2026-04-21T09:38:09.000000Z\",\n            \"updated_at\": \"2026-04-21T09:38:09.000000Z\",\n            \"pivot\": {\n                \"profil_id\": 3,\n                \"competence_id\": 1,\n                \"niveau\": \"debutant\"\n            }\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "supprimer une compétence",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NTk5Mzc4LCJleHAiOjE3NzY2MDI5NzgsIm5iZiI6MTc3NjU5OTM3OCwianRpIjoiYjJ5S1pDZnB4TUVPZkdnOSIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.w8BCs8395y624bI4iwQ7uO-FXDLRo_YBCmntvH063X0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/profil/competences/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profil",
+                "competences",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "supprimer une compétence",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/profil/competences/5",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "profil",
+                    "competences",
+                    "5"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 09:41:17 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"message\": \"Competence retiree du profil.\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Administration",
+      "item": [
+        {
+          "name": "Liste tous les utilisateurs (admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzc2NzI4NzExLCJleHAiOjE3NzY3MzIzMTEsIm5iZiI6MTc3NjcyODcxMSwianRpIjoiZGN0bEpqZW9EU0pFMnN5YSIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJhZG1pbiJ9.TGYXcbhIu5MF-91VI9tzAL3AsgviAuP4CdALcKyCR30",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_admin}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/admin/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "admin",
+                "users"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Liste tous les utilisateurs (admin)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_admin}}"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/admin/users",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:51:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 14,\n            \"name\": \"Karim Benali\",\n            \"email\": \"kari@example.com\",\n            \"email_verified_at\": null,\n            \"role\": \"candidat\",\n            \"created_at\": \"2026-04-20T23:46:10.000000Z\",\n            \"updated_at\": \"2026-04-20T23:46:10.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Sara Idrissi\",\n            \"email\": \"sar@example.com\",\n            \"email_verified_at\": null,\n            \"role\": \"recruteur\",\n            \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n            \"updated_at\": \"2026-04-20T23:45:44.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Admin Principal\",\n            \"email\": \"admi@example.com\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\",\n            \"created_at\": \"2026-04-20T23:45:10.000000Z\",\n            \"updated_at\": \"2026-04-20T23:45:10.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Admin Principal\",\n            \"email\": \"admin@example.com\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\",\n            \"created_at\": \"2026-04-19T15:30:50.000000Z\",\n            \"updated_at\": \"2026-04-19T15:30:50.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Sara Idrissi\",\n            \"email\": \"sara@example.com\",\n            \"email_verified_at\": null,\n            \"role\": \"recruteur\",\n            \"created_at\": \"2026-04-19T15:30:23.000000Z\",\n            \"updated_at\": \"2026-04-19T15:30:23.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Karim Benali\",\n            \"email\": \"karim@example.com\",\n            \"email_verified_at\": null,\n            \"role\": \"candidat\",\n            \"created_at\": \"2026-04-19T15:29:45.000000Z\",\n            \"updated_at\": \"2026-04-19T15:29:45.000000Z\",\n            \"profil\": {\n                \"id\": 2,\n                \"user_id\": 9,\n                \"titre\": \"Développeur Full Stack\",\n                \"bio\": \"Passionné par le développement web, 2 ans d'expérience en Laravel et React.\",\n                \"localisation\": \"Casablanca\",\n                \"disponible\": true,\n                \"created_at\": \"2026-04-19T15:40:25.000000Z\",\n                \"updated_at\": \"2026-04-19T15:40:25.000000Z\"\n            }\n        },\n        {\n            \"id\": 8,\n            \"name\": \"me\",\n            \"email\": \"me@test.com\",\n            \"email_verified_at\": null,\n            \"role\": \"candidat\",\n            \"created_at\": \"2026-04-18T14:49:13.000000Z\",\n            \"updated_at\": \"2026-04-18T14:49:13.000000Z\",\n            \"profil\": {\n                \"id\": 1,\n                \"user_id\": 8,\n                \"titre\": \"Développeur Full Stack\",\n                \"bio\": \"Passionné par le dev web\",\n                \"localisation\": \"Casablanca\",\n                \"disponible\": true,\n                \"created_at\": \"2026-04-18T14:57:22.000000Z\",\n                \"updated_at\": \"2026-04-18T14:57:22.000000Z\"\n            }\n        },\n        {\n            \"id\": 7,\n            \"name\": \"zizo\",\n            \"email\": \"zizo@test.com\",\n            \"email_verified_at\": null,\n            \"role\": \"recruteur\",\n            \"created_at\": \"2026-04-18T13:49:15.000000Z\",\n            \"updated_at\": \"2026-04-18T13:49:15.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Admin\",\n            \"email\": \"admin@test.com\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\",\n            \"created_at\": \"2026-04-18T13:24:25.000000Z\",\n            \"updated_at\": \"2026-04-18T13:24:25.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Test User\",\n            \"email\": \"test@test.com\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\",\n            \"created_at\": \"2026-04-18T12:27:42.000000Z\",\n            \"updated_at\": \"2026-04-18T12:27:42.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"ahmed\",\n            \"email\": \"ahmed@test.com\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\",\n            \"created_at\": \"2026-04-17T12:08:24.000000Z\",\n            \"updated_at\": \"2026-04-17T12:08:24.000000Z\",\n            \"profil\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"aya\",\n            \"email\": \"aya@test.com\",\n            \"email_verified_at\": null,\n            \"role\": \"recruteur\",\n            \"created_at\": \"2026-04-16T23:04:30.000000Z\",\n            \"updated_at\": \"2026-04-16T23:04:30.000000Z\",\n            \"profil\": null\n        }\n    ],\n    \"first_page_url\": \"http://localhost:8000/api/admin/users?page=1\",\n    \"from\": 1,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://localhost:8000/api/admin/users?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"page\": null,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost:8000/api/admin/users?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://localhost:8000/api/admin/users\",\n    \"per_page\": 15,\n    \"prev_page_url\": null,\n    \"to\": 12,\n    \"total\": 12\n}"
+            }
+          ]
+        },
+        {
+          "name": "Désactiver une offre (admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "const json = pm.response.json();",
+                  "pm.test('Champ actif présent', () => pm.expect(json.data).to.have.property('actif'));",
+                  "pm.test('Offre désactivée', () => pm.expect(json.data.actif).to.eql(false));"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_admin}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"actif\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/admin/offres/{{offre_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "offres",
+                "{{offre_id}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Désactiver une offre (admin)",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"actif\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/admin/offres/1/toggle",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "offres",
+                    "1",
+                    "toggle"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:07:06 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Offre activée avec succès.\",\n    \"offre\": {\n        \"id\": 1,\n        \"user_id\": 7,\n        \"titre\": \"ingenieur\",\n        \"description\": \"full stack dev\",\n        \"localisation\": \"casablanca\",\n        \"type\": \"CDI\",\n        \"actif\": true,\n        \"created_at\": \"2026-04-18T13:56:01.000000Z\",\n        \"updated_at\": \"2026-04-21T00:07:06.000000Z\"\n    }\n}"
+            },
+            {
+              "name": "recruteur n est pas accepter",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "",
+                    "value": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"actif\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/admin/offres/3/toggle",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "offres",
+                    "3",
+                    "toggle"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:13:18 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Accès refusé.\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Supprimer un compte utilisateur (admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzI4ODAyLCJleHAiOjE3NzY3MzI0MDIsIm5iZiI6MTc3NjcyODgwMiwianRpIjoicDNyVzZqWjJyOUlQclM3SCIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJhZG1pbiJ9.fqjRWtL6QojbubiCivGl21mZMJ6htR4dCDyyaGhzb84",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/admin/users/9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "admin",
+                "users",
+                "9"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Supprimer un compte utilisateur (admin)",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "disabled": true
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/admin/users/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users",
+                    "9"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:09:43 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Compte supprimé avec succès.\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Candidatures",
+      "item": [
+        {
+          "name": "Mes candidatures (candidat)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzI4ODg5LCJleHAiOjE3NzY3MzI0ODksIm5iZiI6MTc3NjcyODg4OSwianRpIjoiQTVRd1RrNzJRaVhLYm45cyIsInN1YiI6IjE0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.Y-sLPnhKwTWMxb2ZL4ljvQ7IaAF7JdTxzmsIZjio8ZI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_candidat}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/mes-candidatures",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "mes-candidatures"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "pas de profil",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_candidat}}"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/mes-candidatures",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "mes-candidatures"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:14:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Aucun profil trouvé.\"\n}"
+            },
+            {
+              "name": "Mes candidatures (candidat)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_candidat}}"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/mes-candidatures",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "mes-candidatures"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:30:58 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"current_page\": 1,\n    \"data\": [],\n    \"first_page_url\": \"http://localhost:8000/api/mes-candidatures?page=1\",\n    \"from\": null,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://localhost:8000/api/mes-candidatures?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"page\": null,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost:8000/api/mes-candidatures?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://localhost:8000/api/mes-candidatures\",\n    \"per_page\": 10,\n    \"prev_page_url\": null,\n    \"to\": null,\n    \"total\": 0\n}"
+            }
+          ]
+        },
+        {
+          "name": "Candidatures reçues pour une offre (recruteur propriétaire)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzc2NzI4NzQ0LCJleHAiOjE3NzY3MzIzNDQsIm5iZiI6MTc3NjcyODc0NCwianRpIjoiNlZsS1h1RDFQaldZS1F1TSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.xyU3rH5N--pJS8suIsDUP3c_Ru0SuynmQPw0RT7Rb1E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_recruteur}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/offres/3/candidatures",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres",
+                "3",
+                "candidatures"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "(recruteur no proprietere)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_recruteur}}"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/offres/2/candidatures",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres",
+                    "2",
+                    "candidatures"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:36:11 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Accès refusé.\"\n}"
+            },
+            {
+              "name": "(recruteur propriétaire)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_recruteur}}"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/offres/3/candidatures",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres",
+                    "3",
+                    "candidatures"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:37:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"current_page\": 1,\n    \"data\": [],\n    \"first_page_url\": \"http://localhost:8000/api/offres/3/candidatures?page=1\",\n    \"from\": null,\n    \"last_page\": 1,\n    \"last_page_url\": \"http://localhost:8000/api/offres/3/candidatures?page=1\",\n    \"links\": [\n        {\n            \"url\": null,\n            \"label\": \"&laquo; Previous\",\n            \"page\": null,\n            \"active\": false\n        },\n        {\n            \"url\": \"http://localhost:8000/api/offres/3/candidatures?page=1\",\n            \"label\": \"1\",\n            \"page\": 1,\n            \"active\": true\n        },\n        {\n            \"url\": null,\n            \"label\": \"Next &raquo;\",\n            \"page\": null,\n            \"active\": false\n        }\n    ],\n    \"next_page_url\": null,\n    \"path\": \"http://localhost:8000/api/offres/3/candidatures\",\n    \"per_page\": 10,\n    \"prev_page_url\": null,\n    \"to\": null,\n    \"total\": 0\n}"
+            }
+          ]
+        },
+        {
+          "name": "Changer statut → acceptee (recruteur)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzMyNjU5LCJleHAiOjE3NzY3MzYyNTksIm5iZiI6MTc3NjczMjY1OSwianRpIjoiZ3V2bnlpRGdXOHdvR1hTcCIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.q65XEblSE_bFYVi7TpY2b9PXeG29v38tUeHK1LW0570",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_recruteur}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"statut\": \"acceptee\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/candidatures/3/statut",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "candidatures",
+                "3",
+                "statut"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Changer statut → acceptee (recruteur)",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_recruteur}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"statut\": \"acceptee\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/candidatures/3/statut",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "candidatures",
+                    "3",
+                    "statut"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:52:34 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"message\": \"Statut mis à jour.\",\n    \"candidature\": {\n        \"id\": 3,\n        \"offre_id\": 3,\n        \"profil_id\": 3,\n        \"statut\": \"acceptee\",\n        \"message\": null,\n        \"created_at\": \"2026-04-21T00:44:25.000000Z\",\n        \"updated_at\": \"2026-04-21T00:52:34.000000Z\",\n        \"profil\": {\n            \"id\": 3,\n            \"user_id\": 14,\n            \"titre\": \"Développeur Laravel\",\n            \"bio\": \"dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"disponible\": true,\n            \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n            \"updated_at\": \"2026-04-21T00:29:10.000000Z\",\n            \"user\": {\n                \"id\": 14,\n                \"name\": \"Karim Benali\",\n                \"email\": \"kari@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"candidat\",\n                \"created_at\": \"2026-04-20T23:46:10.000000Z\",\n                \"updated_at\": \"2026-04-20T23:46:10.000000Z\"\n            }\n        },\n        \"offre\": {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"updated_at\": \"2026-04-21T00:11:57.000000Z\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Changer statut → refusee (recruteur)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzMyNjU5LCJleHAiOjE3NzY3MzYyNTksIm5iZiI6MTc3NjczMjY1OSwianRpIjoiZ3V2bnlpRGdXOHdvR1hTcCIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.q65XEblSE_bFYVi7TpY2b9PXeG29v38tUeHK1LW0570",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_recruteur}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"statut\": \"refusee\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/candidatures/3/statut",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "candidatures",
+                "3",
+                "statut"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Changer statut → refusee (recruteur)",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_recruteur}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"statut\": \"refusee\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/candidatures/3/statut",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "candidatures",
+                    "3",
+                    "statut"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:53:24 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"message\": \"Statut mis à jour.\",\n    \"candidature\": {\n        \"id\": 3,\n        \"offre_id\": 3,\n        \"profil_id\": 3,\n        \"statut\": \"refusee\",\n        \"message\": null,\n        \"created_at\": \"2026-04-21T00:44:25.000000Z\",\n        \"updated_at\": \"2026-04-21T00:53:24.000000Z\",\n        \"profil\": {\n            \"id\": 3,\n            \"user_id\": 14,\n            \"titre\": \"Développeur Laravel\",\n            \"bio\": \"dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"disponible\": true,\n            \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n            \"updated_at\": \"2026-04-21T00:29:10.000000Z\",\n            \"user\": {\n                \"id\": 14,\n                \"name\": \"Karim Benali\",\n                \"email\": \"kari@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"candidat\",\n                \"created_at\": \"2026-04-20T23:46:10.000000Z\",\n                \"updated_at\": \"2026-04-20T23:46:10.000000Z\"\n            }\n        },\n        \"offre\": {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"updated_at\": \"2026-04-21T00:11:57.000000Z\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "creerprofil",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ppostuler candidat",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzc2NzI4NzcwLCJleHAiOjE3NzY3MzIzNzAsIm5iZiI6MTc3NjcyODc3MCwianRpIjoiY2xhTEV1MzF5bWZlRVJyeCIsInN1YiI6IjE0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.h2q3X4K3wWqtWKRHcFZL9pVfKyeYMNNGbU6fr1HCYR8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token_recruteur}}"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/offres/3/postuler",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "offres",
+                "3",
+                "postuler"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "ppostuler candidat",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token_recruteur}}"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:8000/api/offres/3/postuler",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "offres",
+                    "3",
+                    "postuler"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 21 Apr 2026 00:44:26 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"message\": \"Candidature soumise avec succès.\",\n    \"candidature\": {\n        \"offre_id\": 3,\n        \"profil_id\": 3,\n        \"message\": null,\n        \"statut\": \"en_attente\",\n        \"updated_at\": \"2026-04-21T00:44:25.000000Z\",\n        \"created_at\": \"2026-04-21T00:44:25.000000Z\",\n        \"id\": 3,\n        \"profil\": {\n            \"id\": 3,\n            \"user_id\": 14,\n            \"titre\": \"Développeur Laravel\",\n            \"bio\": \"dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"disponible\": true,\n            \"created_at\": \"2026-04-21T00:29:10.000000Z\",\n            \"updated_at\": \"2026-04-21T00:29:10.000000Z\",\n            \"user\": {\n                \"id\": 14,\n                \"name\": \"Karim Benali\",\n                \"email\": \"kari@example.com\",\n                \"email_verified_at\": null,\n                \"role\": \"candidat\",\n                \"created_at\": \"2026-04-20T23:46:10.000000Z\",\n                \"updated_at\": \"2026-04-20T23:46:10.000000Z\"\n            }\n        },\n        \"offre\": {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"titre\": \"Développeur Laravel\",\n            \"description\": \"Nous cherchons un dev Laravel expérimenté\",\n            \"localisation\": \"Casablanca\",\n            \"type\": \"CDI\",\n            \"actif\": true,\n            \"created_at\": \"2026-04-21T00:11:57.000000Z\",\n            \"updated_at\": \"2026-04-21T00:11:57.000000Z\"\n        }\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login Candidat",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"kari@example.com\",\r\n  \"password\": \"Password123!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login Candidat",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"email\": \"kari@example.com\",\r\n  \"password\": \"Password123!\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/login",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "login"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:48:09 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Connecté avec succès\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzI4ODg5LCJleHAiOjE3NzY3MzI0ODksIm5iZiI6MTc3NjcyODg4OSwianRpIjoiQTVRd1RrNzJRaVhLYm45cyIsInN1YiI6IjE0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.Y-sLPnhKwTWMxb2ZL4ljvQ7IaAF7JdTxzmsIZjio8ZI\",\n    \"user\": {\n        \"id\": 14,\n        \"name\": \"Karim Benali\",\n        \"email\": \"kari@example.com\",\n        \"email_verified_at\": null,\n        \"role\": \"candidat\",\n        \"created_at\": \"2026-04-20T23:46:10.000000Z\",\n        \"updated_at\": \"2026-04-20T23:46:10.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Login Recruteur",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"sar@example.com\",\n  \"password\": \"Password123!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login Recruteur",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"email\": \"sar@example.com\",\n  \"password\": \"Password123!\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/login",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "login"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:47:16 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Connecté avec succès\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzI4ODM2LCJleHAiOjE3NzY3MzI0MzYsIm5iZiI6MTc3NjcyODgzNiwianRpIjoiRVhiNktWQkhSamdXSkVtbSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.qwUSvr-DceZOE3Upfo1PmfriYAl0ufWUpyaqVfFbesk\",\n    \"user\": {\n        \"id\": 13,\n        \"name\": \"Sara Idrissi\",\n        \"email\": \"sar@example.com\",\n        \"email_verified_at\": null,\n        \"role\": \"recruteur\",\n        \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n        \"updated_at\": \"2026-04-20T23:45:44.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Login Admin",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n \"email\": \"admi@example.com\",\n  \"password\": \"Password123!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login Admin",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n \"email\": \"admi@example.com\",\n  \"password\": \"Password123!\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/login",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "login"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:46:42 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Connecté avec succès\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2NzI4ODAyLCJleHAiOjE3NzY3MzI0MDIsIm5iZiI6MTc3NjcyODgwMiwianRpIjoicDNyVzZqWjJyOUlQclM3SCIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJhZG1pbiJ9.fqjRWtL6QojbubiCivGl21mZMJ6htR4dCDyyaGhzb84\",\n    \"user\": {\n        \"id\": 12,\n        \"name\": \"Admin Principal\",\n        \"email\": \"admi@example.com\",\n        \"email_verified_at\": null,\n        \"role\": \"admin\",\n        \"created_at\": \"2026-04-20T23:45:10.000000Z\",\n        \"updated_at\": \"2026-04-20T23:45:10.000000Z\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "registerCondidat",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Karim Benali\",\r\n  \"email\": \"kari@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"password_confirmation\": \"Password123!\",\r\n  \"role\": \"candidat\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "registerCondidat",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Karim Benali\",\r\n  \"email\": \"kari@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"password_confirmation\": \"Password123!\",\r\n  \"role\": \"candidat\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/register",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:46:10 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Compte créé avec succès\",\n    \"user\": {\n        \"name\": \"Karim Benali\",\n        \"email\": \"kari@example.com\",\n        \"role\": \"candidat\",\n        \"updated_at\": \"2026-04-20T23:46:10.000000Z\",\n        \"created_at\": \"2026-04-20T23:46:10.000000Z\",\n        \"id\": 14\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzc2NzI4NzcwLCJleHAiOjE3NzY3MzIzNzAsIm5iZiI6MTc3NjcyODc3MCwianRpIjoiY2xhTEV1MzF5bWZlRVJyeCIsInN1YiI6IjE0IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJjYW5kaWRhdCJ9.h2q3X4K3wWqtWKRHcFZL9pVfKyeYMNNGbU6fr1HCYR8\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "registerrecruteur",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Sara Idrissi\",\r\n  \"email\": \"sara@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"password_confirmation\": \"Password123!\",\r\n  \"role\": \"recruteur\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "registerrecruteur",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Sara Idrissi\",\r\n  \"email\": \"sar@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"password_confirmation\": \"Password123!\",\r\n  \"role\": \"recruteur\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/register",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:45:44 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Compte créé avec succès\",\n    \"user\": {\n        \"name\": \"Sara Idrissi\",\n        \"email\": \"sar@example.com\",\n        \"role\": \"recruteur\",\n        \"updated_at\": \"2026-04-20T23:45:44.000000Z\",\n        \"created_at\": \"2026-04-20T23:45:44.000000Z\",\n        \"id\": 13\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzc2NzI4NzQ0LCJleHAiOjE3NzY3MzIzNDQsIm5iZiI6MTc3NjcyODc0NCwianRpIjoiNlZsS1h1RDFQaldZS1F1TSIsInN1YiI6IjEzIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJyZWNydXRldXIifQ.xyU3rH5N--pJS8suIsDUP3c_Ru0SuynmQPw0RT7Rb1E\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "registerAdmin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Admin Principal\",\r\n  \"email\": \"admi@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"password_confirmation\": \"Password123!\",\r\n  \"role\": \"admin\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "registerAdmin",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Admin Principal\",\r\n  \"email\": \"admi@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"password_confirmation\": \"Password123!\",\r\n  \"role\": \"admin\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8000/api/register",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "localhost:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.3.28"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 Apr 2026 23:45:11 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Compte créé avec succès\",\n    \"user\": {\n        \"name\": \"Admin Principal\",\n        \"email\": \"admi@example.com\",\n        \"role\": \"admin\",\n        \"updated_at\": \"2026-04-20T23:45:10.000000Z\",\n        \"created_at\": \"2026-04-20T23:45:10.000000Z\",\n        \"id\": 12\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzc2NzI4NzExLCJleHAiOjE3NzY3MzIzMTEsIm5iZiI6MTc3NjcyODcxMSwianRpIjoiZGN0bEpqZW9EU0pFMnN5YSIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsInJvbGUiOiJhZG1pbiJ9.TGYXcbhIu5MF-91VI9tzAL3AsgviAuP4CdALcKyCR30\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

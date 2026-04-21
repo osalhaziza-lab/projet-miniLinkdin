@@ -37,12 +37,12 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/offres/{offre}/postuler',          [CandidatureController::class, 'postuler']);
     Route::get('/mes-candidatures',                  [CandidatureController::class, 'mesCandidatures']);
     Route::get('/offres/{offre}/candidatures',       [CandidatureController::class, 'candidaturesOffre']);
-    Route::put('/candidatures/{candidature}/statut', [CandidatureController::class, 'changerStatut']);
+    Route::patch('/candidatures/{candidature}/statut', [CandidatureController::class, 'changerStatut']);
 
     // Admin
     Route::middleware('check.role:admin')->group(function () {
         Route::get('/admin/users',                 [AdminController::class, 'listeUsers']);
         Route::delete('/admin/users/{user}',       [AdminController::class, 'supprimerUser']);
-        Route::put('/admin/offres/{offre}/toggle', [AdminController::class, 'toggleOffre']);
+        Route::patch('/admin/offres/{offre}/toggle', [AdminController::class, 'toggleOffre']);
     });
 });
